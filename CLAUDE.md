@@ -55,7 +55,7 @@ ESLint additionally bans `console` outright in framework and test code (`no-cons
 
 ## Git workflow
 
-- **Every distinct change gets its own GitHub issue, its own isolated git worktree/branch, and its own PR referencing that issue** (e.g. `Closes #N`). Never bundle unrelated changes into one commit/PR, and never commit straight to `main`. Workflow per change: open the issue → create a worktree for it → implement → open the PR.
+- **Every distinct change gets its own GitHub issue, its own isolated git worktree/branch, and its own PR referencing that issue** (e.g. `Closes #N`). Never bundle unrelated changes into one commit/PR, and never commit straight to `main`. Workflow per change: open the issue → create a worktree for it → implement → open the PR. After the PR is merged, clean up with the `cleanup-merged` skill (`.claude/skills/cleanup-merged/`) — local only, the remote branch is never deleted.
 - Commit messages must match `^#[0-9]+ .+` (issue-id prefix), enforced by the `commit-msg` hook (Merge/Revert/fixup/squash exempt). `npm ci` sets `core.commentChar` to `;` so Git doesn't strip `#`-prefixed subject lines.
 - `pre-commit` runs `lint-staged` (eslint --fix + prettier --write on staged files).
 - `pre-push` blocks direct pushes to `main`.

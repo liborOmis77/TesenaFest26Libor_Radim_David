@@ -4,57 +4,57 @@
 
 # Type
 - name: bug
-  color: "d73a4a"
+  color: 'd73a4a'
   description: Something isn't working
 - name: enhancement
-  color: "a2eeef"
+  color: 'a2eeef'
   description: New feature or request
 - name: documentation
-  color: "0075ca"
+  color: '0075ca'
   description: Improvements or additions to documentation
 - name: refactor
-  color: "cfd3d7"
+  color: 'cfd3d7'
   description: Code change that neither fixes a bug nor adds a feature
 - name: chore
-  color: "d4c5f9"
+  color: 'd4c5f9'
   description: Maintenance task, tooling, or dependency update
 
 # Priority
-- name: "priority: P0-critical"
-  color: "b60205"
+- name: 'priority: P0-critical'
+  color: 'b60205'
   description: Blocks release or production is down
-- name: "priority: P1-high"
-  color: "d93f0b"
+- name: 'priority: P1-high'
+  color: 'd93f0b'
   description: Important, should be addressed soon
-- name: "priority: P2-medium"
-  color: "fbca04"
+- name: 'priority: P2-medium'
+  color: 'fbca04'
   description: Normal priority, workaround may exist
-- name: "priority: P3-low"
-  color: "0e8a16"
+- name: 'priority: P3-low'
+  color: '0e8a16'
   description: Minor or cosmetic, no urgency
 
 # Status / workflow
 - name: triage
-  color: "ededed"
+  color: 'ededed'
   description: Needs review to confirm validity and priority
 - name: needs-repro
-  color: "ededed"
+  color: 'ededed'
   description: Cannot be reproduced yet, more info needed
 - name: in-progress
-  color: "1d76db"
+  color: '1d76db'
   description: Actively being worked on
 - name: blocked
-  color: "000000"
+  color: '000000'
   description: Blocked by another issue or external dependency
 - name: wontfix
-  color: "ffffff"
+  color: 'ffffff'
   description: This will not be worked on
 - name: duplicate
-  color: "cfd3d7"
+  color: 'cfd3d7'
   description: This issue or PR already exists
 - name: good first issue
-  color: "7057ff"
+  color: '7057ff'
   description: Good for newcomers
 - name: help wanted
-  color: "008672"
+  color: '008672'
   description: Extra attention is needed

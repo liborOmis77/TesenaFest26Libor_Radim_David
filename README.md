@@ -84,6 +84,19 @@ the task after the test, including on failure.
 npm test -- --grep @TC-003
 ```
 
+### TC-004: label name
+
+`tests/labels/labels.spec.ts` creates a personal label with a unique name prepared
+before the request. It validates the creation and GET response schemas and checks
+that both responses contain the entered name. The data fixture removes the label
+after the test, including on failure.
+
+```sh
+npm test -- --grep @TC-004
+```
+
+In PowerShell, use `npm.cmd test -- --grep '@TC-004'`.
+
 ## Security
 
 - The token lives only in `.env` (gitignored) and in the `TODOIST_API_TOKEN` GitHub secret.

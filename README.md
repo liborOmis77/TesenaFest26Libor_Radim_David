@@ -73,6 +73,17 @@ test('TC-002 A new task is created with the text that was entered', {
 - `unauthenticatedApi` and `apiWithToken(token)` are for the negative auth tests.
 - `accountTimezone` (with `src/utils/dates.ts`) is the timezone for date assertions, not the runner's clock.
 
+### TC-003: task due date
+
+`tests/tasks/create-task.spec.ts` creates a task with an explicit `due_date` set to
+tomorrow in the account timezone. It validates the creation and GET response schemas
+and checks that both responses contain the entered date. The data fixture removes
+the task after the test, including on failure.
+
+```sh
+npm test -- --grep @TC-003
+```
+
 ## Security
 
 - The token lives only in `.env` (gitignored) and in the `TODOIST_API_TOKEN` GitHub secret.
